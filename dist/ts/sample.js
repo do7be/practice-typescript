@@ -1,11 +1,11 @@
-var module1;
-(function (module1) {
-    var foo = (function () {
-        function foo() {
-        }
-        return foo;
-    }());
-    module1.foo = foo;
-})(module1 || (module1 = {}));
-var foo = new module1.foo();
-console.log(foo);
+var hoge = (function () {
+    function hoge() {
+        console.log('contructor!!!!');
+    }
+    hoge.prototype.nyaan = function (voice) {
+        console.log(voice);
+    };
+    return hoge;
+}());
+var fuga = new hoge;
+fuga.nyaan('wan');

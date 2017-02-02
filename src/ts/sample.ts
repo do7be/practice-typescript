@@ -1,6 +1,12 @@
-namespace module1 {
-  export class foo {}
+class hoge {
+  constructor () {
+    console.log('contructor!!!!')
+  }
+
+  nyaan (voice :string) {
+    console.log(voice)
+  }
 }
 
-var foo = new module1.foo();
-console.log(foo);
+const fuga = new hoge
+fuga.nyaan('wan')
