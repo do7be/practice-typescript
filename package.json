@@ -1,11 +1,14 @@
 {
-    "name": "practice-typescript",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "build": "tsc"
-    },
-    "author": "do7be",
-    "license": "MIT"
+  "name": "practice-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "do7be",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
 }
