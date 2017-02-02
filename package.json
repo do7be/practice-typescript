@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "tsc src/ts/sample.ts -outDir dist/ts --noImplicitAny --strictNullChecks"
+        "build": "tsc"
     },
     "author": "do7be",
     "license": "MIT"

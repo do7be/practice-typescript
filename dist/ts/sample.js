@@ -9,3 +9,4 @@ var hoge = (function () {
 }());
 var fuga = new hoge;
 fuga.nyaan('wan');
+fuga.nyaan('kokekokko-');

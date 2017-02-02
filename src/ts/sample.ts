@@ -10,3 +10,4 @@ class hoge {
 
 const fuga = new hoge
 fuga.nyaan('wan')
+fuga.nyaan('kokekokko-')
