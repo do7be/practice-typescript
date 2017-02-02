@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "webpack"
   },
   "author": "do7be",
   "license": "MIT",
   "devDependencies": {
+    "path": "^0.12.7",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.1.5",
     "webpack": "^2.2.1"
   }
 }
