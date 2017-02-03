@@ -77,6 +77,7 @@ window.onload = function () {
         }
         hoge.prototype.nyaan = function (voice) {
             console.log(voice);
+            return voice;
         };
         return hoge;
     }());
@@ -87,6 +88,12 @@ window.onload = function () {
     aaa.addEventListener('click', function (e) {
         var bbb = document.getElementById('piyo-area');
         bbb.textContent = 'PIYO!PIYO!たまにはのんびり!';
+    });
+    var ccc = document.getElementById('nyaan-voice');
+    ccc.addEventListener('change', function (e) {
+        var voice = fuga.nyaan(ccc.value);
+        var ddd = document.getElementById('voice-preview');
+        ddd.textContent = voice;
     });
 };
 
