@@ -70,18 +70,25 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-var hoge = (function () {
-    function hoge() {
-        console.log('contructor!!!!');
-    }
-    hoge.prototype.nyaan = function (voice) {
-        console.log(voice);
-    };
-    return hoge;
-}());
-var fuga = new hoge;
-fuga.nyaan('wan');
-fuga.nyaan('kokekokko-');
+window.onload = function () {
+    var hoge = (function () {
+        function hoge() {
+            console.log('contructor!!!!');
+        }
+        hoge.prototype.nyaan = function (voice) {
+            console.log(voice);
+        };
+        return hoge;
+    }());
+    var fuga = new hoge;
+    fuga.nyaan('wan');
+    fuga.nyaan('kokekokko-');
+    var aaa = document.getElementById('piyo-button');
+    aaa.addEventListener('click', function (e) {
+        var bbb = document.getElementById('piyo-area');
+        bbb.textContent = 'PIYO!PIYO!たまにはのんびり!';
+    });
+};
 
 
 /***/ })
