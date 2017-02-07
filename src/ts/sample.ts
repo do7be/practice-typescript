@@ -14,16 +14,13 @@ window.onload = () => {
   fuga.nyaan('wan')
   fuga.nyaan('kokekokko-')
 
-  let aaa = <HTMLInputElement>document.getElementById('piyo-button')
-  aaa.addEventListener('click', (e :Event) => {
-    let bbb = <HTMLInputElement>document.getElementById('piyo-area')
+  document.getElementById('piyo-button')!.addEventListener('click', (e) => {
+    let bbb = document.getElementById('piyo-area')! as HTMLInputElement
     bbb.textContent = 'PIYO!PIYO!たまにはのんびり!'
   })
 
-  const ccc = <HTMLInputElement>document.getElementById('nyaan-voice')
-  ccc.addEventListener('change', (e :Event) => {
-    const voice = fuga.nyaan(ccc.value)
-    let ddd = <HTMLInputElement>document.getElementById('voice-preview')
-    ddd.textContent = voice
+  document.getElementById('nyaan-voice')!.addEventListener('change', function (this: HTMLInputElement, e) {
+    const voice = fuga.nyaan(this.value)
+    document.getElementById('voice-preview')!.textContent = voice
   })
 }

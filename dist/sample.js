@@ -84,16 +84,13 @@ window.onload = function () {
     var fuga = new hoge;
     fuga.nyaan('wan');
     fuga.nyaan('kokekokko-');
-    var aaa = document.getElementById('piyo-button');
-    aaa.addEventListener('click', function (e) {
+    document.getElementById('piyo-button').addEventListener('click', function (e) {
         var bbb = document.getElementById('piyo-area');
         bbb.textContent = 'PIYO!PIYO!たまにはのんびり!';
     });
-    var ccc = document.getElementById('nyaan-voice');
-    ccc.addEventListener('change', function (e) {
-        var voice = fuga.nyaan(ccc.value);
-        var ddd = document.getElementById('voice-preview');
-        ddd.textContent = voice;
+    document.getElementById('nyaan-voice').addEventListener('change', function (e) {
+        var voice = fuga.nyaan(this.value);
+        document.getElementById('voice-preview').textContent = voice;
     });
 };
 
