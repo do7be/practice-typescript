@@ -87,6 +87,10 @@ window.onload = function () {
     document.getElementById('piyo-button').addEventListener('click', function (e) {
         var bbb = document.getElementById('piyo-area');
         bbb.textContent = 'PIYO!PIYO!たまにはのんびり!';
+        var ccc = document.getElementById('piyo-area');
+        if (ccc) {
+            ccc.textContent = 'PIYO!PIYO!たまにはのんびりしない!';
+        }
     });
     document.getElementById('nyaan-voice').addEventListener('change', function (e) {
         var voice = fuga.nyaan(this.value);
