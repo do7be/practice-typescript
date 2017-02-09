@@ -18,7 +18,7 @@ window.onload = () => {
     let bbb = document.getElementById('piyo-area')! as HTMLInputElement
     bbb.textContent = 'PIYO!PIYO!たまにはのんびり!'
 
-    let ccc = document.getElementById('piyo-area')
+    let ccc = document.getElementById('piyo-area2')
     if (ccc) {
       ccc.textContent = 'PIYO!PIYO!たまにはのんびりしない!'
     }
